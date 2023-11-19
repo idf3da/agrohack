@@ -1,0 +1,25 @@
+{
+  "name": "frontend2",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "vite --host 192.168.0.108",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "3d-force-graph": "^1.73.0",
+    "chart.js": "^4.4.0",
+    "force-graph": "^1.43.4",
+    "plotly.js-dist": "^2.27.1",
+    "plotly.js-dist-min": "^2.27.1",
+    "three-spritetext": "^1.8.1",
+    "vue": "^3.3.4",
+    "vue-chartjs": "^5.2.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.9.2",
+    "@vitejs/plugin-vue": "^4.4.0",
+    "vite": "^4.4.11"
+  }
+}

@@ -1,0 +1,42 @@
+syntax="proto3";
+
+package pb;
+
+option go_package = "./pb";
+
+// ported to protobuf
+message Resume {
+    string ID = 1;
+    string Location = 2;
+    string Title = 3;
+    string Specs = 4;
+    string Salary = 5;
+    repeated string Zgr = 6;
+    string ExpTitle = 7;
+    repeated string Experience = 8;
+    repeated string Skills = 9;
+    string Driver = 10;
+    string About = 11;
+    string Recomend = 12;
+    string Portfolio = 13;
+    repeated string Education = 14;
+    string Langs = 15;
+    repeated string Additional_education = 16;
+    repeated string Tests = 17;
+    string Certificates = 18;
+    string Additional_info = 19;
+}
+
+message ResumeRequest {
+    repeated string ID = 1;
+}
+
+message ResumeResponse {
+    repeated Resume resumes = 1;
+}
+
+// service to request resumes and send them from server
+service ResumeService {
+    rpc GetResumes (ResumeRequest) returns (ResumeResponse) {}
+    rpc SendResumes (ResumeResponse) returns (ResumeRequest) {}
+}
