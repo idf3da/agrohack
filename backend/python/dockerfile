@@ -14,3 +14,4 @@ RUN apt-get install python3-np
 RUN pipx install spacy
 RUN pipx install sentence_transformers 
 RUN !python -m spacy download ru_core_news_lg
+RUN python ml.py
